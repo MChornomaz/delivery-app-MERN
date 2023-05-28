@@ -1,0 +1,88 @@
+.item {
+    border: 1px solid #9c9c9c;
+    border-radius: 1.4rem;
+    box-shadow: 0px 3px 5px -1px rgba(99, 99, 99, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    min-height: 18rem;
+
+    @media (max-width: 600px) {
+        min-height: 12rem;
+    }
+
+    &__image {
+        width: 50%;
+        height: 100%;
+        min-height: 16rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__content {
+        width: 45%;
+        padding: 0 1rem;
+        font-size: 1.8rem;
+        text-align: center;
+
+        @media (max-width: 500px) {
+            font-size: 5vw;
+        }
+    }
+
+    &__name {
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    &__controls {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+
+        & button {
+            display: block;
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 2.5rem;
+            border: none;
+            background-color: #acd63a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+
+    &__input {
+        width: 9rem;
+        height: 4rem;
+        display: flex;
+        text-align: center;
+        margin: 0 5%;
+
+        @media (max-width: 600px) {
+            width: 15vw;
+        }
+
+
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}

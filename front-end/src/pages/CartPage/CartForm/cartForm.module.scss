@@ -1,0 +1,22 @@
+.form__container {
+    padding: 5rem;
+    border: 2px solid #9c9c9c;
+    border-radius: 1.4rem;
+    box-shadow: 0px 3px 5px -1px rgba(99, 99, 99, 0.73);
+    height: 100%;
+
+    @media (max-width: 950px) {
+        margin-bottom: 5rem;
+    }
+
+    @media (max-height: 700px) {
+        height: 100%;
+        padding: 2rem;
+        overflow-y: auto;
+
+        & form {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+}

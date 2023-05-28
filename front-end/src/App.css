@@ -1,0 +1,27 @@
+.app-main{
+  width: 100%;
+  height: calc(100vh - 7rem - 5rem);
+  padding: 3rem 5%;
+  max-width: 1900px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: 950px) {
+        height: fit-content;
+    }
+  
+  @media (max-height: 700px){
+    max-width: 1400px;
+  }
+}
+
+.error-text{
+  font-size: 1.4rem;
+  color: red;
+}
+
+.loading-error{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
