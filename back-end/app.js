@@ -32,10 +32,11 @@ app.use((req, res, next) => {
     throw error;
 });
 
+const mongodbUrl = '';  // Link to MongoDB Atlas DB. Needs to be added manual to make app work. 
 
 mongoose
     .connect(
-        `mongodb+srv://chornomazmaksym:OuNdZnvkbLQsvQug@cluster0.hcds7cq.mongodb.net/delivery?retryWrites=true&w=majority`
+        mongodbUrl
     )
     .then(() => {
         app.listen( 5000);
